@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[brazil]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx,color}
+\usepackage[top=3cm,left=3cm,right=2cm,bottom=2cm]{geometry}
+\usepackage{lscape}
+
+\title{Estudos Avançados em \textttt{R}: Visualização de dados}
+
+\author{Larissa de Carvalho Alves (Orientadora) \footnote{Doutora em Estatística - UFRJ \color{blue} (larissa.alves@ibge.gov.br)} \\
+Gustvo Henrique Mitraud Assis Rocha (Coorientador)  \footnote{Doutor em Estatística - UFMG \color{blue} (gustavo.rocha@ibge.gov.br)}}
+\date{junho/2017}
+
+\clearpage
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\noindent Com o aumento do volume de informações é cada vez mais importante o domínio de técnicas para resumo e visualização dos dados. O software \texttt{R} oferece um conjunto de funções e bibliotecas para a elaboração de diversos gráficos como formas de representar e apresentar dados. O objetivo deste projeto é aprofundar os estudos de tais funções para a criação de apresentações interativas e gráficos dinâmicos. O avanço do conhecimento destas ferramentas permitirá uma ampliação da capacidade de análise e sumarização de dados. Além disso, o conhecimento adquirido durante a implementação deste projeto permitirá a criação de repositórios de documentação para uso nas esferas de ensino e pesquisa da ENCE. \\
+\\
+\noindent \textbf{Palavras-chave}: interatividade, apresentações dinâmicas, representação gráfica.
+\end{abstract}
+
+\section{Introdução}
+
+O \textit{software} \texttt{R} é uma linguagem e um ambiente de código aberto para computação estatística e gráfica que fornece aos seus usuários uma ampla variedade de técnicas para realização de cálculos, manipulação e visualização de dados, além de modelagem estatística (R Core Team, 2017). Ainda segundo seus fundadores, o \texttt{R} permite aos seus usuários criar novas funcionalidades por meio de uma linguagem simples e integrada com outras linguagens, como C, C++ e Fortran.
+
+Uma das grandes vantagens do uso do \texttt{R} para análise de dados é a sua possibilidade de extensão via pacotes, grande parte desenvolvida por pesquisadores e usuários do \texttt{R}, os quais permitem uma ligação direta entre os mais recentes avanços em tecnologia, modelagem e computação e os usuários desta plataforma. O grande repositório online de pacotes do \texttt{R} é conhecido como CRAN ({\it Comprehensive R Archive Network}) e é mantido por uma rede de servidores espalhados pelo mundo.
+
+Este projeto tem o objetivo de aprofundar os estudos das ferramentas existentes para representação visual de dados utilizando o \textit{software} \texttt{R} através do \(RStudio\). Atualmente alguns dos pacotes mais utilizados para criação de apresentações dinâmicas são \texttt{ggplot2}, \texttt{shiny} e \texttt{rmarkdown}, dentre outros. O pacote \texttt{ggplot2} é uma alternativa atraente para a exploração dinâmica de um conjunto de dados e é baseado na "gramática de gráficos estatísticos" (Wilkinson, 2005). O \texttt{shiny} é um pacote que facilita a criação de aplicações web. O pacote \texttt{rmarkdown} é baseado no pacote \texttt{knitr} e contém opções para gerar documentos em vários formatos de maneira mais aprimorada. O pacote \texttt{knitr}, por sua vez, é uma combinação de várias ideias desenvolvidas separadamente para programação literária. Tal pacote suporta várias linguagens de documentação e programação. O resultado destes documentos pode ser exportado para pdf, html, etc.
+
+Este projeto faz parte do Núcleo de Estudos Avançados em \texttt{R} (NeaR), que consiste em um grupo de pesquisa recém formado na Escola Nacional de Ciências Estatísticas (ENCE). O NeaR tem como finalidade aprofundar o domínio das ferramentas mais atuais para manipulação, análise e visualização de dados utilizando o software \texttt{R}. Atualmente o NeaR é composto por 6 (seis) professores da graduação em Estatística e, a partir do segundo semestre de 2017, pretende envolver alunos de graduação por meio da participação no Programa Institucional de Bolsas de Iniciação Científica (PIBIC) da ENCE. Pela relevância e atualidade dos estudos a serem desenvolvidos no âmbito do NeaR, em médio e longo prazo espera-se uma melhor qualificação do corpo discente e o desenvolvimento paralelo de uma documentação destas ferramentas mais atuais de análise de dados para melhoria das atividades de ensino e pesquisa da ENCE.
+
+Além da linha de pesquisa em visualização de dados, o NeaR também atua no aprofundamento de conhecimentos nas áreas de integração de bases e sistemas e {\it Text Mining} utilizando o software \texttt{R}.
+
+\section{Métodos}
+Para o alcance dos objetivos do projeto o aluno bolsista estudará os principais pacotes para confecção de gráficos interativos: \texttt{ggplot2}, \texttt{shiny}, além do estudo de pacotes que permitam a elaboração de apresentações dinâmicas (\texttt{rmarkdown} e \texttt{knitr}) através do \(RStudio\) (RStudio Team, 2015).
+
+Adicionalmente, casos reais discutidos no âmbito do NeaR poderão ser utilizados para implementação de códigos e criação de exemplos para posterior documentação. O projeto prevê ainda a troca de conhecimentos entre participantes do NeaR, por meio da realização de seminários e encontros periódicos na ENCE.
+
+\section{Plano de trabalho e requisitos necessários}
+
+O plano de trabalho para o aluno bolsista do projeto está descrito na Tabela 1. Em relação aos requisitos do aluno bolsista, é necessário apenas que este possua interesse em programação, goste de trabalhar em equipe e que aceite desafios. Além das exigências ordinárias envolvidas na participação de um aluno no Projeto PIBIC (elaboração de relatório e apresentação oral na Jornada de Iniciação Científica), este projeto ainda pretende envolver o aluno bolsista na preparação de trabalhos para submissão em congresso(s) de estatística.
+
+\begin{table}[t]
+\begin{center}
+\caption{\small Plano de Trabalho}
+\begin{tabular}{c|c} \hline
+\textbf{Etapas} & \textbf{Prazos}\\
+\hline
+Revisão e aprofundamento na linguagem \texttt{R} & Ago/2017 a Out/2017\\
+
+ Levantamento de pacotes para visualização de dados no \texttt{R} & Nov/2017 a Dez/2017\\
+
+ Implementação de representações dinâmicas   & Jan/2018 a Mai/2018\\
+
+Documentação dos avanços e técnicas estudadas & Mar/2018 a Jun/2018\\
+
+Preparação de relatório de atividades & Jun/2018\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\begin{thebibliography}{}
+	
+\item R Core Team (2017). {\it R: A language and environment for statistical computing}. R Foundation for Statistical Computing, Vienna, Austria, URL http://www.R-project.org/.
+
+\item RStudio Team (2015). {\it RStudio: Integrated Development for R}. RStudio, Inc., Boston, MA URL http://www.rstudio.com/.
+
+\item Wilkinson, L. (2005) {\it The Grammar of Graphics  (Statistcs and Computing)}. Springer.
+
+\end{thebibliography}
+
+\end{document}
