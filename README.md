@@ -1,4 +1,4 @@
 # projetos
 
-Diretório para armazenar os `.tex` dos projetos.
+Diretório para armazenar os arquivos `.tex` dos projetos.
 
